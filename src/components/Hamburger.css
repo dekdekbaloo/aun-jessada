@@ -1,0 +1,129 @@
+.hamburger .hamburger__top {
+  top: 0;
+}
+
+.hamburger .hamburger__top.--active {
+  animation: hamburger-top 1s 1 forwards;
+}
+
+.hamburger .hamburger__top.--inactive {
+  animation: hamburger-top-reverse 1s 1 forwards;
+}
+
+@keyframes hamburger-top {
+  from {
+    top: 0;
+    transform: translateY(0);
+  }
+
+  40% {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  to {
+    top: 50%;
+    transform: translateY(-50%) rotateZ(45deg);
+  }
+}
+
+@keyframes hamburger-top-reverse {
+  to {
+    top: 0;
+    transform: translateY(0);
+  }
+
+  40% {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  from {
+    top: 50%;
+    transform: translateY(-50%) rotateZ(45deg);
+  }
+}
+
+.hamburger .hamburger__center {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.hamburger .hamburger__center.--active {
+  animation: hamburger-center 0.3s 1 forwards;
+}
+
+.hamburger .hamburger__center.--inactive {
+  opacity: 0;
+  animation: hamburger-center-reverse 0.5s 0.3s 1 forwards;
+}
+
+@keyframes hamburger-center {
+  from {
+    opacity: 1;
+    transform: translateY(-50%) scale(1);
+  }
+
+  to {
+    opacity: 0;
+    transform: translateY(-50%) scale(0.1);
+  }
+}
+
+@keyframes hamburger-center-reverse {
+  to {
+    opacity: 1;
+    transform: translateY(-50%) scale(1);
+  }
+
+  from {
+    opacity: 0;
+    transform: translateY(-50%) scale(0.1);
+  }
+}
+
+.hamburger .hamburger__bottom {
+  bottom: 0;
+}
+
+.hamburger .hamburger__bottom.--active {
+  animation: hamburger-bottom 1s 1 forwards;
+}
+
+.hamburger .hamburger__bottom.--inactive {
+  animation: hamburger-bottom-reverse 1s 1 forwards;
+}
+
+@keyframes hamburger-bottom {
+  from {
+    bottom: 0;
+    transform: translateY(0);
+  }
+
+  40% {
+    bottom: 50%;
+    transform: translateY(50%);
+  }
+
+  to {
+    bottom: 50%;
+    transform: translateY(50%) rotateZ(315deg);
+  }
+}
+
+@keyframes hamburger-bottom-reverse {
+  to {
+    bottom: 0;
+    transform: translateY(0);
+  }
+
+  40% {
+    bottom: 50%;
+    transform: translateY(50%);
+  }
+
+  from {
+    bottom: 50%;
+    transform: translateY(50%) rotateZ(315deg);
+  }
+}
