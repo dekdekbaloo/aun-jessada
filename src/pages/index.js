@@ -2,6 +2,8 @@ import React from "react";
 import Header from "../sections/Header";
 import Hello from "../sections/Hello";
 import InteractiveUIs from "../sections/InteractiveUIs";
+import TrunkBased from "../sections/TrunkBased";
+import Background from "../sections/Background";
 
 const IndexPage = () => {
   return (
@@ -9,6 +11,8 @@ const IndexPage = () => {
       <Header />
       <Hello />
       <InteractiveUIs />
+      <TrunkBased />
+      <Background />
     </main>
   );
 };
