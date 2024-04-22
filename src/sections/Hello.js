@@ -2,7 +2,7 @@ import React from "react";
 import Section from "../components/Section";
 
 const Hello = () => (
-  <Section className="px-10 py-4">
+  <Section className="p-4 md:px-10 md:py-4">
     <h2 className="text-2xl mb-4">สวัสดีครับ | Hello Everyone!</h2>
     <p>
       I’m <strong>Aun Jessada</strong>, a fullstack web engineer located in

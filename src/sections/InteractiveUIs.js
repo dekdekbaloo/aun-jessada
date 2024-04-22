@@ -14,16 +14,16 @@ const InteractiveUIs = () => (
   <Section className="p-10 divide-y">
     <div>
       <h3 className="text-2xl font-bold text-center mb-4">Hamburger 🍔</h3>
-      <div className="flex justify-center space-x-10 items-center mb-10">
+      <div className="flex flex-col space-y-2 md:flex-row justify-center md:space-x-10 items-center mb-10">
         <div className="flex-none">
           <Hamburger size={240} />
         </div>
-        <div className="text-xs max-h-96 overflow-auto">
+        <div className="text-xs w-full max-h-96 overflow-auto">
           <SyntaxHighlighter language="jsx" style={vscDarkPlus}>
             {hamburgerCode}
           </SyntaxHighlighter>
         </div>
-        <div className="text-xs max-h-96 overflow-auto">
+        <div className="text-xs w-full max-h-96 overflow-auto">
           <SyntaxHighlighter language="css" style={vscDarkPlus}>
             {hamburgerCSSCode}
           </SyntaxHighlighter>
@@ -32,11 +32,11 @@ const InteractiveUIs = () => (
     </div>
     <div>
       <h3 className="text-2xl font-bold text-center my-4">Guitar Strings 🎸</h3>
-      <div className="flex justify-center space-x-10 items-center mb-10">
+      <div className="flex flex-col space-y-2 md:flex-row justify-center md:space-x-10 items-center mb-10">
         <div className="flex-none">
-          <Guitar width={480} height={480} />
+          <Guitar width={320} height={320} />
         </div>
-        <div className="text-xs max-h-96 overflow-auto flex-1">
+        <div className="text-xs w-full max-h-96 overflow-auto flex-1">
           <SyntaxHighlighter language="jsx" style={vscDarkPlus}>
             {guitarCode}
           </SyntaxHighlighter>
